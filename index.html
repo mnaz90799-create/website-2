@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f4f6ff;
+            color: #222;
+        }
+        header {
+            background: #24245c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #39398a;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffd166;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(120deg, #6868c8, #a6a6ed);
+            color: white;
+        }
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 18px;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        section h2 {
+            color: #39398a;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 15px auto;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skill {
+            background: #39398a;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+        }
+        button {
+            background: #39398a;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #6868c8;
+        }
+        footer {
+            background: #24245c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to My Personal Website</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero" id="home">
+        <h1>Hello, Welcome!</h1>
+        <p>I am a BCA Student</p>
+        <p>Learning Technology and Building My Future.</p>
+        <button onclick="welcomeMessage()">
+            Click Here
+        </button>
+    </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                Hello! I am a Bachelor of Computer
+                Applications (BCA) student.
+                I am interested in technology,
+                programming and data analytics.
+                My goal is to learn new skills
+                and build a successful career
+                in the IT industry.
+            </p>
+        </div>
+    </section>
+    <section id="education">
+        <h2>My Education</h2>
+        <div class="card">
+            <h3>Bachelor of Computer Applications</h3>
+            <p>St. Aloysius College</p>
+            <p>Graduation: 2026</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">Excel</div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="card">
+            <h3>Student Portfolio Website</h3>
+            <p>
+                A personal website created using
+                HTML, CSS and JavaScript.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Data Analytics Dashboard</h3>
+            <p>
+                A dashboard project created using
+                Power BI to understand and visualize data.
+            </p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card">
+            <p>Email: your-email@example.com</p>
+            <p>Location: India</p>
+            <button onclick="showContact()">
+                Say Hello
+            </button>
+        </div>
+    </section>
+    <footer>
+        <p>© 2026 My Portfolio Website</p>
+        <p>Created using HTML, CSS and JavaScript</p>
+    </footer>
+    <script>
+        function welcomeMessage() {
+            alert("Welcome to My Portfolio Website!");
+        }
+        function showContact() {
+            alert("Thank you for visiting my website!");
+        }
+    </script>
+</body>
+</html>
